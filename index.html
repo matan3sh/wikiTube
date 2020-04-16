@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>wikiTube - App</title>
+</head>
+<body onload="onInit()">
+    <nav class="navbar bg-danger">
+        <h1><i class="fab fa-wikipedia-w"></i> <i class="fas fa-plus"></i> <i class="fab fa-youtube"></i></h1>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div>
+            <form class="form">
+                <input id="search" type="text" placeholder="Search A Band">
+                <button class="btn btn-dark btn-block" onclick="onSearch(event)">Search</button>
+            </form>
+        </div>
+        <div class="wiki-output"></div>
+        <div class="youtube-output"></div>
+    </div>
+    <script src="lib/axios.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+</body>
+</html>
